@@ -11,14 +11,19 @@
 
 @end
 
+@import UIKit;
+@import FirebaseCore;
+@import FirebaseDatabase;
+@import FirebaseAuth;
+
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [FIRApp configure];
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+  return YES;
 }
-
 
 #pragma mark - UISceneSession lifecycle
 
